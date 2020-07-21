@@ -1,0 +1,8 @@
+<router-outlet></router-outlet>
+<div class="container-fluid">
+  <div *ngFor="let chart of charts" class="chart-container">
+    <app-vega-chart id="{{chart.name}}"
+                    [pathToData]="chart.path">
+    </app-vega-chart>
+  </div>
+</div>
